@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Premium Glassy 12-Hour Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="clock-section">
+      <canvas id="clock-canvas" width="340" height="340"></canvas>
+    </div>
+    <div class="info-section">
+      <div class="greeting" id="greeting"></div>
+      <div class="score-box">
+        <span>Points:</span>
+        <span id="score">0</span>
+      </div>
+      <div class="timezone-select">
+        <label for="tz">Timezone:</label>
+        <select id="tz">
+          <option value="Asia/Yangon">Yangon</option>
+          <option value="Asia/Bangkok">Bangkok</option>
+          <option value="Asia/Singapore">Singapore</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+          <option value="Europe/London">London</option>
+          <option value="America/New_York">New York</option>
+        </select>
+      </div>
+      <div class="quote" id="quote"></div>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+  background: linear-gradient(135deg, #f7fafc 0%, #e9eef6 100%);
+  min-height: 100vh;
+  font-family: 'Inter', 'Myanmar3', Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.7s;
+}
+
+.container {
+  background: rgba(255,255,255,0.55);
+  border-radius: 36px;
+  box-shadow: 0 12px 48px 0 rgba(50,80,120,0.12);
+  padding: 34px 44px 30px 44px;
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: center;
+  backdrop-filter: blur(7px);
+}
+
+.clock-section {
+  background: linear-gradient(135deg,rgba(255,255,255,0.8) 0,#e6f2fc 100%);
+  border-radius: 50%;
+  box-shadow: 0 3px 32px 0 rgba(90,140,220,0.10);
+  padding: 18px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  min-width: 220px;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #48637b;
+  padding: 0 0 6px 0;
+  letter-spacing: 0.01em;
+}
+
+.score-box {
+  background: linear-gradient(90deg, #f7e9ce 0%, #e3f5fa 100%);
+  color: #735c2b;
+  font-weight: 700;
+  border-radius: 13px;
+  font-size: 1.1rem;
+  padding: 7px 18px;
+  box-shadow: 0 2px 8px rgba(204,186,138,0.09);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.timezone-select {
+  font-size: 1rem;
+  color: #6886a3;
+  margin: 2px 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.timezone-select select {
+  background: rgba(255,255,255,0.7);
+  border-radius: 5px;
+  border: none;
+  padding: 5px 8px;
+  font-size: 1rem;
+  color: #455a72;
+}
+
+.quote {
+  margin-top: 10px;
+  color: #77a0d4;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.08rem;
+  background: linear-gradient(90deg, #ffffff 20%, #eaf2f8 100%);
+  border-radius: 9px;
+  padding: 8px 13px;
+  min-height: 38px;
+  box-shadow: 0 1px 6px rgba(180,190,210,0.08);
+}
+
+#theme-toggle {
+  background: linear-gradient(90deg, #fef6e2 0%, #e6f1ff 100%);
+  color: #b68b2b;
+  border: none;
+  border-radius: 11px;
+  padding: 8px 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  box-shadow: 0 1px 8px rgba(255,200,100,0.07);
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 8px;
+  transition: background 0.25s, color 0.25s;
+}
+
+#theme-toggle:hover {
+  background: linear-gradient(90deg,#ffefcf 0%,#d8f1ff 100%);
+  color: #eab221;
+}
+
+/* Dark/Gold mode */
+body.dark {
+  background: linear-gradient(135deg, #23243e 0%, #1b293a 100%);
+}
+
+body.dark .container {
+  background: rgba(34,38,59,0.89);
+  box-shadow: 0 12px 36px 0 rgba(34,38,59,0.30);
+}
+
+body.dark .clock-section {
+  background: linear-gradient(135deg,#2a2c44 0,#314a60 100%);
+  box-shadow: 0 3px 32px 0 rgba(90,140,220,0.09);
+}
+
+body.dark .greeting {
+  color: #e6dbba;
+}
+
+body.dark .score-box {
+  background: linear-gradient(90deg, #f7d19c 0%, #2b2931 100%);
+  color: #f6d281;
+}
+
+body.dark .timezone-select {
+  color: #f8edbd;
+}
+
+body.dark .timezone-select select {
+  background: #23243e;
+  color: #e6dbba;
+}
+
+body.dark .quote {
+  background: linear-gradient(90deg, #2b2931 20%, #343e4d 100%);
+  color: #d4b97e;
+}
+
+body.dark #theme-toggle {
+  background: linear-gradient(90deg, #2b2c2e 0%, #403d3f 100%);
+  color: #ffe29c;
+}
+
+body.dark #theme-toggle:hover {
+  background: linear-gradient(90deg,#3b2f14 0%,#1e2125 100%);
+  color: #ffe8a4;
+}
